@@ -1,10 +1,10 @@
 {
     "spotify": {
-        "client_id": "ClientID",
-        "client_secret": "ClientSecret",
-        "playlist_id": "PlaylistID"
+        "client_id": "b20d9c443fe9494ea3962b679110c0b3",
+        "client_secret": "bb694fa549354e96a876020625d8a4f6",
+        "playlist_id": "37i9dQZF1DWSTqUqJcxFk6"
     },
     "genius": {
-        "access_token": "AccessToken"
+        "access_token": "kgBGyLahZ1zkPOoGSFNlVNjPyyJnr7XKVoMTDNKKeMDDFnf4xtiSYyqmRcs-TVct"
     }
 }

@@ -305,7 +305,7 @@ with open("tracklist.txt", "r+", encoding="utf-8") as f:
 get_status(tracklist)
 
 # Open the tracklist file in the default application
-#("tracklist.txt")
+os.startfile("tracklist.txt")
 
 
 
