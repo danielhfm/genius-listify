@@ -5,16 +5,11 @@ Format of the Songs:
 Artist – „Song“ [Genius-Indicator]
 Whereas the indicators will show, if the song has complete lyrics, is a shellpage, has no lyrics at all or doesn't exist on Genius.	
 
-Before using the script, you will need to get a Genius API Token.
- You can get one here: https://genius.com/api-clients/new
+# Setup
+Before using the script, you will need to put your data into userdata.json.
 
-Furthermore you will need a Spotify API Token.
-https://developer.spotify.com/documentation/web-api
-
-Create an app over at https://developer.spotify.com/dashboard
-Get your Client ID and Client Secret
-
-Add the Genius Token, Spotify Client ID and Spotify Client Secret to your userdata.json file.
+Genius API Token can be aquired [here](https://genius.com/api-clients/new)
+In order to get a Spotify API Token you will have to create an app over at the [Spotify dashboard](https://developer.spotify.com/dashboard)
 
 Next, you will need to add your Spotify Playlist ID to the userdata.json file.
 
@@ -23,11 +18,9 @@ You will get a link like this: https://open.spotify.com/playlist/37i9dQZF1DXcBWI
 
 The part between "playlist/" and "?si=" is your Playlist ID. In this case: 37i9dQZF1DXcBWIGoYBM5M
 
-Add this ID to your userdata.json file.
+After successfully adding the Genius API Token, your Spotify Client ID and Secret and a Playlist ID the script should be working properly.
 
-Now you can run the script. It will create a file called "tracklist.txt" in the same directory as the script.
-
-You can now copy the contents of this file and paste it into the Genius List Editor.
+You can now copy the contents of this file and paste it into your Genius annotation.
 
 If you want to use the script again, you should make sure you space out the text in the tracklist.txt file, so new songs will be seperated from the old ones.
 
