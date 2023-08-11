@@ -9,6 +9,7 @@ Whereas the indicators will show, if the song has complete lyrics, is a shellpag
 Before using the script, you will need to put your data into userdata.json.
 
 Genius API Token can be aquired [here](https://genius.com/api-clients/new)
+
 In order to get a Spotify API Token you will have to create an app over at the [Spotify dashboard](https://developer.spotify.com/dashboard)
 
 Next, you will need to add your Spotify Playlist ID to the userdata.json file.
