@@ -7,7 +7,7 @@ Whereas the indicators will show, if the song has complete lyrics, is a shellpag
 
 # Setup
 - Before using the script, you will need to put your data into the userdata.json.
-- Make sure you paste your Tokens only in the designated "___", not elsewhere.
+- Make sure you paste your Tokens only in the designated "your___", not elsewhere.
 - Also make sure you are copying the right token. Don't mix up the Client ID with the Client Secret.
 
 1. Create a Genius API Client over [here](https://genius.com/api-clients/new)
