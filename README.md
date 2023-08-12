@@ -6,9 +6,9 @@ Artist – „Song“ [Genius-Indicator]
 Whereas the indicators will show, if the song has complete lyrics, is a shellpage, has no lyrics at all or doesn't exist on Genius.	
 
 # Setup
-Before using the script, you will need to put your data into the userdata.json.
-Make sure you paste your Tokens only in the designated "___", not elsewhere.
-Also make sure you are copying the right token. Don't mix up the Client ID with the Client Secret.
+-Before using the script, you will need to put your data into the userdata.json.
+-Make sure you paste your Tokens only in the designated "___", not elsewhere.
+-Also make sure you are copying the right token. Don't mix up the Client ID with the Client Secret.
 
 1. Create a Genius API Client over [here](https://genius.com/api-clients/new)
 2. Copy the Access Token and insert it into your userdata.json under genius > "access_token": "ACCESS_TOKEN HERE"
