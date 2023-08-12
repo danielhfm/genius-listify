@@ -11,15 +11,15 @@ Whereas the indicators will show, if the song has complete lyrics, is a shellpag
 - Also make sure you are copying the right token. Don't mix up the Client ID with the Client Secret.
 
 1. Create a Genius API Client over [here](https://genius.com/api-clients/new)
-2. Copy the Access Token and insert it into your userdata.json under genius > "access_token": "AccessToken"
+2. Copy the Access Token and insert it into your userdata.json under genius > "access_token": "yourAccessToken"
 3. Create a Spotify API App over at the [Spotify dashboard](https://developer.spotify.com/dashboard)
 4. Go to the settings of your newly created Spotify API App and click "View client secret"
-5. Copy the Client ID and insert it into your userdata.json under spotify > "client_id": "ClientID"
-6. Copy the Client secret and insert it into your userdata.json under spotify > "client_secret": "ClientSecret"
+5. Copy the Client ID and insert it into your userdata.json under spotify > "client_id": "yourClientID"
+6. Copy the Client secret and insert it into your userdata.json under spotify > "client_secret": "yourClientSecret"
 7. Find your desired Spotify Playlist
 8. Rightclick the Playlist and select "Share" and then "Copy URL"
 9. Fetch the Playlist ID from the link, which is the part between "playlist/" and "?si=" is your Playlist ID.
-10. Copy the Playlist ID and insert it into your userdata.json under spotify > "playlist_id": "PlaylistID"
+10. Copy the Playlist ID and insert it into your userdata.json under spotify > "playlist_id": "yourPlaylistID"
 
 # How to get the Spotify Playlist ID
 Example for a Spotify Playlist and how to tell what's the ID:
