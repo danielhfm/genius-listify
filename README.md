@@ -8,9 +8,19 @@ Whereas the indicators will show, if the song has complete lyrics, is a shellpag
 # Setup
 Before using the script, you will need to put your data into userdata.json.
 
-Genius API Token can be aquired [here](https://genius.com/api-clients/new)
+1. Create a Genius API Client over [here](https://genius.com/api-clients/new)
+2. Copy the Access Token and insert it into your userdata.json under genius > "access_token": "ACCESS_TOKEN HERE"
+3. Create a Spotify API App over at the [Spotify dashboard](https://developer.spotify.com/dashboard)
+4. Go to the settings of your newly created Spotify API App and click "View client secret"
+5. Copy the Client ID and insert it into your userdata.json under spotify > "client_id": "CLIENT_ID HERE"
+6. Copy the Client secret and insert it into your userdata.json under spotify > "client_secret": "CLIENT_SECRET HERE"
+7. Find your desired Spotify Playlist
+8. Rightclick the Playlist and select "Share" and then "Copy URL"
+9. Fetch the Playlist ID from the link, which is the part between "playlist/" and "?si=" is your Playlist ID.
 
-In order to get a Spotify API Token you will have to create an app over at the [Spotify dashboard](https://developer.spotify.com/dashboard)
+Example for a Spotify Playlist and how to tell what's the ID:
+You will get a link like this: https://open.spotify.com/playlist/<b>37i9dQZF1DXcBWIGoYBM5M</b>?si=65741838282e4a40
+In this case: 37i9dQZF1DXcBWIGoYBM5M
 
 Next, you will need to add your Spotify Playlist ID to the userdata.json file.
 
