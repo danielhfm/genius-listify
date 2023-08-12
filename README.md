@@ -21,8 +21,11 @@ Before using the script, you will need to put your data into the userdata.json.
 
 # How to get the Spotify Playlist ID
 Example for a Spotify Playlist and how to tell what's the ID:
+
 You will get a link like this: https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=65741838282e4a40
+
 https://open.spotify.com/playlist/<b>37i9dQZF1DXcBWIGoYBM5M</b>?si=65741838282e4a40
+
 Our ID in this case is: 37i9dQZF1DXcBWIGoYBM5M
 
 # Further use of the script
