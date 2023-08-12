@@ -6,7 +6,7 @@ Artist – „Song“ [Genius-Indicator]
 Whereas the indicators will show, if the song has complete lyrics, is a shellpage, has no lyrics at all or doesn't exist on Genius.	
 
 # Setup
-Before using the script, you will need to put your data into userdata.json.
+Before using the script, you will need to put your data into the userdata.json.
 
 1. Create a Genius API Client over [here](https://genius.com/api-clients/new)
 2. Copy the Access Token and insert it into your userdata.json under genius > "access_token": "ACCESS_TOKEN HERE"
@@ -17,22 +17,17 @@ Before using the script, you will need to put your data into userdata.json.
 7. Find your desired Spotify Playlist
 8. Rightclick the Playlist and select "Share" and then "Copy URL"
 9. Fetch the Playlist ID from the link, which is the part between "playlist/" and "?si=" is your Playlist ID.
+10. Copy the Playlist ID and insert it into your userdata.json under spotify > "playlist_id": "YOUR_PLAYLIST_ID HERE"
 
+# How to get the Spotify Playlist ID
 Example for a Spotify Playlist and how to tell what's the ID:
-You will get a link like this: https://open.spotify.com/playlist/<b>37i9dQZF1DXcBWIGoYBM5M</b>?si=65741838282e4a40
-In this case: 37i9dQZF1DXcBWIGoYBM5M
-
-Next, you will need to add your Spotify Playlist ID to the userdata.json file.
-
-In order to do that, find your playlist on Spotify, click on the three dots and select "Share" and then "Copy URL".
 You will get a link like this: https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=65741838282e4a40
+https://open.spotify.com/playlist/<b>37i9dQZF1DXcBWIGoYBM5M</b>?si=65741838282e4a40
+Our ID in this case is: 37i9dQZF1DXcBWIGoYBM5M
 
-The part between "playlist/" and "?si=" is your Playlist ID. In this case: 37i9dQZF1DXcBWIGoYBM5M
-
-After successfully adding the Genius API Token, your Spotify Client ID and Secret and a Playlist ID the script should be working properly.
-
-You can now copy the contents of this file and paste it into your Genius annotation.
-
-If you want to use the script again, you should make sure you space out the text in the tracklist.txt file, so new songs will be seperated from the old ones.
-
-
+# Further use of the script
+- After running the script it should take a few minutes until the songs are done fetching and your tracklist.txt will open with the fetched songs
+- If you're going to use the script a second time it will update the status of all current songs that are still in the spotify playlists and in the tracklist.txt
+- If you want to avoid duplicates, you should NEVER delete anything from the tracklist.txt
+- If a song shows up twice regardless, it might be because some data like the artists or the name has been changed slightly. In this case delete the one that is further up to avoid duplicates.
+- Upon running the script a second time with a new playlist or with the updated playlist you should add a new line at the bottom of the .txt so you can tell the new one and the old one apart better.
