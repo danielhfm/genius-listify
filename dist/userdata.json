@@ -1,15 +1,11 @@
 {
     "spotify": {
-        "client_id": "ClientID",
-        "client_secret": "ClientSecret",
-        "playlist_id": "PlaylistID"
+        "client_id": "yourClientID",
+        "client_secret": "yourClientSecret",
+        "playlist_id": "yourPlaylistID"
     },
     
     "genius": {
         "access_token": "AccessToken"
-    },
-
-    "settings": {
-        "sort_by": "default"
     }
 }
