@@ -6,6 +6,10 @@
     },
     
     "genius": {
-        "access_token": "AccessToken"
+        "access_token": "yourAccessToken"
+    },
+
+    "settings": {
+        "sort_by": "default"
     }
 }
