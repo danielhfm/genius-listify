@@ -5,6 +5,12 @@ Format of the Songs:
 Artist – „Song“ [Genius-Indicator]
 Whereas the indicators will show, if the song has complete lyrics, is a shellpage, has no lyrics at all or doesn't exist on Genius.	
 
+# Settings
+To change the settings, you will have to change the variables under "settings" inside the userdata.json.
+Currently there is:
+- sort_by: default, artist
+- default will just pull the playlist as is, artist will sort the playlist by artists alphabetically.
+
 # Setup
 - Before using the script, you will need to put your data into the userdata.json.
 - Make sure you paste your Tokens only in the designated "your___", not elsewhere.
