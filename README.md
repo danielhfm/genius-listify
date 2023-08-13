@@ -13,7 +13,7 @@ Currently there is:
 
 # Setup
 - Before using the script, you will need to put your data into the userdata.json.
-- Make sure you paste your Tokens only in the designated "your___", not elsewhere.
+- Make sure you paste your Tokens only in the designated field, not elsewhere. [example](https://imgur.com/g7dbitx)
 - Also make sure you are copying the right token. Don't mix up the Client ID with the Client Secret.
 
 1. Create a Genius API Client over [here](https://genius.com/api-clients/new)
