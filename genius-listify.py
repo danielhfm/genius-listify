@@ -1,3 +1,6 @@
+# file: gns_listbuilder
+# author: https://github.com/danielhfm
+
 import os
 import requests
 import json
@@ -35,6 +38,10 @@ sp_client_id = userdata["spotify"]["client_id"]
 sp_client_secret = userdata["spotify"]["client_secret"]
 sp_playlist_id = userdata["spotify"]["playlist_id"]
 gns_access_token = userdata["genius"]["access_token"]
+if userdata["settings"]["sort_by"] == "artist":
+    sort_by_artist = True
+else:
+    sort_by_artist = False
 
 # Spotify API
 client_credentials_manager = SpotifyClientCredentials(sp_client_id, sp_client_secret)
@@ -151,11 +158,6 @@ def search_track(track, search_string):
     response.raise_for_status()
     response_data = response.json()
 
-    # if search string = Bosca & Celo & Abdi - Teer, give out all data please
-    if search_string == "Bosca & Celo & Abdi - Teer":
-        print(response_data)
-        
-
     # Check if the track was found
     if response_data["meta"]["status"] == 200 and len(response_data["response"]["hits"]) != 0:
         if check_strings(track.title, response_data["response"]["hits"][0]["result"]["title"]):
@@ -229,6 +231,11 @@ playlist = fetch_playlist(sp_playlist_id)
 temp = filter_tracks(playlist)
 
 tracklist = temp[0]
+
+# If the setting is set to True, sort by artist
+if sort_by_artist:
+    tracklist.sort(key=lambda x: x.artist.lower())
+
 amount = temp[1]
 
 # Search for the tracks on Genius

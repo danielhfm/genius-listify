@@ -4,7 +4,12 @@
         "client_secret": "ClientSecret",
         "playlist_id": "PlaylistID"
     },
+    
     "genius": {
         "access_token": "AccessToken"
+    },
+
+    "settings": {
+        "sort_by": "default"
     }
 }
